@@ -1,0 +1,11 @@
+/**** APP LIST CSS ****/
+
+/* TABLE STYLES */
+table{
+    width: 1000px;
+    margin: auto;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}
