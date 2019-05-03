@@ -41,9 +41,10 @@
   <tr mat-row *matRowDef="let row; columns: appTableColumns;"></tr>
 </table>
 
-<form (ngSubmit)="appSubmit()">
+<form (ngSubmit)="appSubmit()" #appForm="ngForm">
   <mat-form-field appearance="standard">
     <mat-label>Company</mat-label>
     <input matInput placeholder="Company Name">
   </mat-form-field>
+  <button mat-button type="submit">Submit</button>
 </form>

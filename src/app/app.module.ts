@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppListComponent } from './app-list/app-list.component';
 import { MaterialsModule } from './materials/materials.module';
 import { TesterComponent } from './tester/tester.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { TesterComponent } from './tester/tester.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     MaterialsModule
   ],
   providers: [],

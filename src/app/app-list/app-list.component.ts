@@ -34,7 +34,8 @@ export class AppListComponent implements OnInit {
       replied: false, 
       status: "Interview for Monday"
     },
-    { company: "IBM", 
+    { 
+      company: "IBM", 
       dateApplied: new Date('May 1, 2019'), 
       location: "Raleigh", 
       title: "Developer", 
@@ -55,6 +56,18 @@ export class AppListComponent implements OnInit {
   }
 
   appSubmit(){
+    //event.preventDefault();
     console.log("Submitted");
+    var newApp: JobApp = 
+    {
+      company: "Test", 
+      dateApplied: new Date('May 1, 2019'), 
+      location: "Raleigh", 
+      title: "Developer", 
+      replied: true, 
+      status: "Interview for Monday"
+    };
+    this.appDataSource.data.push(newApp);
+    console.log(JSON.stringify(this.appDataSource.data));
   }
 }
